@@ -1,0 +1,32 @@
+.container {
+  max-width: 96rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+}
+
+.inlineContainer {
+  margin-left: 0rem;
+}
+
+.star--filled {
+  color: #123850 ;
+}
+
+.star--empty {
+  color: #123850 ;
+}
+.reviewsRating :global(.vtex-reviews-and-ratings-3-x-star){
+  color: #fff !important;
+}
+.reviewsRatingCount,
+.reviewsRatingAverage{
+  color: #fff;
+}
+.reviewsRatingAverage{
+  margin: 0.7em 0;
+}
+/* .reviewComment{
+  display: flex;
+  flex-direction: row;
+  background: red;
+} */

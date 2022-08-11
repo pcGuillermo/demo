@@ -1,0 +1,94 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "rich-text##shop",
+      "image#imgAutoParts",
+      "rich-text#seeCollection"
+    ]
+  },
+  "rich-text##shop": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "text": "**Nueva coleccion de auto parts**",
+      "blockClass": "text20px"
+    }
+  },
+  "image#imgAutoParts": {
+    "props": {
+      "src": "assets/imgAutoParts.png",
+      "blockClass": "imgAutoParts"
+    }
+  },
+  "rich-text#seeCollection": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Ver coleccion](#)",
+      "blockClass": "seeCollection"
+    }
+  },
+  "vtex.menu@2.x:menu#brands": {
+    "children": [
+      "rich-text##brands",
+      "vtex.menu@2.x:menu#brand1",
+      "vtex.menu@2.x:menu#brand2",
+      "vtex.menu@2.x:menu#brand3"
+    ],
+    "props": {
+      "blockClass": "brands"
+    }
+  },
+  "rich-text##brands": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "text": "Expertos en marcas",
+      "blockClass": "text20px"
+    }
+  },
+  "vtex.menu@2.x:menu#brand1": {
+    "title": "brand1",
+    "children": [
+      "image#brand1"
+    ],
+    "props": {
+      "blockClass": "brand"
+    }
+  },
+  "image#brand1": {
+    "props": {
+      "src": "assets/jeep.png"
+    }
+  },
+  "vtex.menu@2.x:menu#brand2": {
+    "title": "brand2",
+    "children": [
+      "image#brand2"
+    ],
+    "props": {
+      "blockClass": "brand"
+    }
+  },
+  "image#brand2": {
+    "props": {
+      "src": "assets/ford.png"
+    }
+  },
+  "vtex.menu@2.x:menu#brand3": {
+    "title": "brand3",
+    "children": [
+      "image#brand3"
+    ],
+    "props": {
+      "blockClass": "brand"
+    }
+  },
+  "image#brand3": {
+    "props": {
+      "src": "assets/toyota.png"
+    }
+  }
+}

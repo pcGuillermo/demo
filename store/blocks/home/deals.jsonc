@@ -1,0 +1,116 @@
+{
+  "slider-layout#dealsMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 4,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "deals"
+    },
+    "children": [
+      "image#deal1",
+      "image#deal2",
+      "image#deal3",
+      "image#deal4"
+    ]
+  },
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#space",
+      "flex-layout.col#taller",
+      "flex-layout.col#envio",
+      "flex-layout.col#herraminetas",
+      "flex-layout.col#servicios",
+      "flex-layout.col#space"
+    ],
+    "props": {
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#space": {
+    "children": [
+      "rich-text#space"
+    ]
+  },
+  "rich-text#space": {
+    "props": {
+      "text": ""
+    }
+  },
+  
+  "flex-layout.col#taller": {
+    "children": [
+      "image#deal1",
+      "rich-text#deal1"
+    ]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/taller.png",
+      "maxHeight": "60px"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "Auto Taller",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#envio": {
+    "children": [
+      "image#deal2",
+      "rich-text#deal2"
+    ]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/envio.png",
+      "maxHeight": "60px"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "Envio Gratis",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#herraminetas": {
+    "children": [
+      "image#deal3",
+      "rich-text#deal3"
+    ]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/herramienta.png",
+      "maxHeight": "60px"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "Mejores Herramientas",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#servicios": {
+    "children": [
+      "image#deal4",
+      "rich-text#deal4"
+    ]
+  },
+  "image#deal4": {
+    "props": {
+      "src": "assets/servicios.png",
+      "maxHeight": "60px"
+    }
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "Servicios Express",
+      "blockClass": "deals"
+    }
+  }
+}

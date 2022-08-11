@@ -1,0 +1,394 @@
+{
+  "store.home": {
+    "blocks": [
+      // "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      // "__fold__",
+      "responsive-layout.desktop",
+      "responsive-layout.mobile"
+    ]
+  },
+  "responsive-layout.desktop": {
+    "children": [
+      "info-card#topBaner1",
+      "flex-layout.row#bottomBaners",
+      "rich-text#recommendedTitle",
+      "flex-layout.row#shelf",
+      "info-card#promotion",
+      "rich-text#discounts",
+      "flex-layout.row#shelf",
+      "flex-layout.row#deals",
+      "rich-text#brands",
+      "flex-layout.row#brands"
+    ]
+  },
+  "responsive-layout.mobile": {
+    "children": [
+      "info-card#topBaner1",
+      "slider-layout#bottomBaner",
+      "rich-text#recommendedTitle",
+      "flex-layout.row#shelf",
+      "info-card#promotionMobile",
+      "rich-text#discounts",
+      "flex-layout.row#shelf",
+      "slider-layout#dealsMobile",
+      "rich-text#brands",
+      "slider-layout#brandsMobile"
+    ]
+  },
+  "slider-layout#bottomBaner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly"
+    },
+    "children": [ "info-card#bottomBaner1",  "info-card#bottomBaner2"]
+  },
+  "flex-layout.row#bottomBaners": {
+    "title": "bottomBaners",
+    "children": [
+      "flex-layout.col#bottomBaner1",
+      "flex-layout.col#bottomBaner2"
+    ],
+    "props": {
+      "fullWidth": true,
+      "marginTop": 5
+    }
+  },
+  "flex-layout.col#bottomBaner1": {
+    "title": "bottomBaner1",
+    "children": [
+      "info-card#bottomBaner1"
+    ]
+  },
+  "flex-layout.col#bottomBaner2": {
+    "title": "bottomBaner2",
+    "children": [
+      "info-card#bottomBaner2"
+    ]
+  },
+  "info-card#bottomBaner1": {
+    "props": {
+      "id": "info-card-bottomBaner1",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/camioneta.png",
+      "headline": "<p class='vtex-textTitleBottomBaner'>Original parts</p>",
+      "callToActionText": "ver producto",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-bottomBaner1",
+      "textAlignment": "right"
+    }
+  },
+  "info-card#bottomBaner2": {
+    "props": {
+      "id": "info-card-bottomBaner2",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/aceite.png",
+      "headline": "<p class='vtex-textTitleBottomBaner1'>Aceites</p><p class='vtex-textSubtitleBottomBaner1'>EN PROMOCION</p>",
+      "callToActionText": "ver producto",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-bottomBaner2",
+      "textAlignment": "right"
+    }
+  },
+  // "list-context.image-list#demo": {
+  //   "children": [
+  //     "slider-layout#demo-images"
+  //   ],
+  //   "props": {
+  //     "height": 570,
+  //     "preload": true,
+  //     "images": [
+  //       {
+  //         "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+  //       },
+  //       {
+  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+  //       }
+  //     ]
+  //   }
+  // },
+  // "slider-layout#demo-images": {
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "showNavigationArrows": "desktopOnly",
+  //     "blockClass": "carousel"
+  //   }
+  // },
+  "rich-text#discounts": {
+    "props": {
+      "text": "Descuentos",
+      "fullWidth": true,
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#brands": {
+    "props": {
+      "text": "Marcas",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#recommendedTitle": {
+    "props": {
+      "fullWidth": true,
+      "text": "Lo mas vendidos",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "title": "producList1",
+    "children": [
+      "list-context.product-list#demo1"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "list-context.product-list#demo1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "info-card#topBaner1": {
+    "props": {
+      "fullWidth": true,
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/card.png",
+      "headline": "<p class='vtex-textTitleTopBaner1'>50%</p><p class='vtex-textSubtitleTopBaner1'>BMW original parts</p>",
+      "subhead": "valido Abril 2022",
+      "callToActionText": "ver producto",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#promotion": {
+    "props": {
+      "id": "info-card-promotion",
+      "fullWidth": true,
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "assets/frenos1.png",
+      "headline": "Promocion del mes",
+      "subhead": "Frenos Toyota",
+      "callToActionText": "ver producto",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-promotion",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#promotionMobile": {
+    "props": {
+      "id": "info-card-promotion",
+      "fullWidth": true,
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/frenos1.png",
+      "headline": "Promocion del mes",
+      "subhead": "Frenos Toyota",
+      "callToActionText": "ver producto",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-promotion",
+      "textAlignment": "center"
+    }
+  },
+  "slider-layout#brandsMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "image#brandsImgs1",
+      "image#brandsImgs2",
+      "image#brandsImgs3",
+      "image#brandsImgs4",
+      "image#brandsImgs5",
+      "image#brandsImgs6",
+      "image#brandsImgs7"
+    ]
+  },
+  "flex-layout.row#brands": {
+    "title": "brandsImgs",
+    "children": [
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
+      "flex-layout.col#brandsImgs1",
+      "flex-layout.col#brandsImgs2",
+      "flex-layout.col#brandsImgs3",
+      "flex-layout.col#brandsImgs4",
+      "flex-layout.col#brandsImgs5",
+      "flex-layout.col#brandsImgs6",
+      "flex-layout.col#brandsImgs7",
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "brandsImgs"
+    }
+  },
+  "flex-layout.col#brandsImgs1": {
+    "title": "brandsImgs1",
+    "children": [
+      "image#brandsImgs1"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "brandsImgs"
+    }
+  },
+  "image#brandsImgs1": {
+    "props": {
+      "src": "assets/brandsImgs1.png"
+    }
+  },
+  "flex-layout.col#brandsImgs2": {
+    "title": "brandsImgs2",
+    "children": [
+      "image#brandsImgs2"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "brandsImgs"
+    }
+  },
+  "image#brandsImgs2": {
+    "props": {
+      "src": "assets/brandsImgs2.png"
+    }
+  },
+  "flex-layout.col#brandsImgs3": {
+    "title": "brandsImgs3",
+    "children": [
+      "image#brandsImgs3"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "brandsImgs"
+    }
+  },
+  "image#brandsImgs3": {
+    "props": {
+      "src": "assets/brandsImgs3.png"
+    }
+  },
+  "flex-layout.col#brandsImgs4": {
+    "title": "brandsImgs4",
+    "children": [
+      "image#brandsImgs4"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "brandsImgs"
+    }
+  },
+  "image#brandsImgs4": {
+    "props": {
+      "src": "assets/brandsImgs4.png"
+    }
+  },
+  "flex-layout.col#brandsImgs5": {
+    "title": "brandsImgs5",
+    "children": [
+      "image#brandsImgs5"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "brandsImgs"
+    }
+  },
+  "image#brandsImgs5": {
+    "props": {
+      "src": "assets/brandsImgs5.png"
+    }
+  },
+  "flex-layout.col#brandsImgs6": {
+    "title": "brandsImgs6",
+    "children": [
+      "image#brandsImgs6"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "brandsImgs"
+    }
+  },
+  "image#brandsImgs6": {
+    "props": {
+      "src": "assets/brandsImgs6.png"
+    }
+  },
+  "flex-layout.col#brandsImgs7": {
+    "title": "brandsImgs7",
+    "children": [
+      "image#brandsImgs7"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "brandsImgs"
+    }
+  },
+  "image#brandsImgs7": {
+    "props": {
+      "src": "assets/brandsImgs7.png"
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "blockClass": "brandsImgsSpacer"
+    }
+  }
+  // "rich-text#question": {
+  //   "props": {
+  //     "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+  //     "blockClass": "question"
+  //   }
+  // },
+  // "rich-text#link": {
+  //   "props": {
+  //     "text": "\n**Reach us at**\nwww.vtex.com.br",
+  //     "blockClass": "link"
+  //   }
+  // }
+}

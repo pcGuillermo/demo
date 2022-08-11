@@ -1,0 +1,79 @@
+{
+  "store.custom#contact-us": {
+    "children": [
+      "flex-layout.row#contact-us"
+    ]
+  },
+
+  "flex-layout.row#contact-us": {
+    "props": {
+      "blockClass": "contact"
+    },
+    "children": [
+      "flex-layout.col#contact-us"
+    ]
+  },
+
+  "flex-layout.col#contact-us": {
+    "children": [
+      "rich-text#contact-us",
+      "form#contact-us"
+    ]
+  },
+  "rich-text#contact-us": {
+    "props": {
+      "text": "## Contact Us"
+    }
+  },
+
+  "form#contact-us": {
+    "props": {
+      "entity": "memoform",
+      "schema": "memoform"
+    },
+    "blocks": [
+      "form-success#contact-us"
+    ],
+    "children": [
+      "form-input.text#name",
+      "form-input.text#email",
+      "form-input.text#phone",
+      "form-submit#contact"
+    ]
+  },
+
+  "form-success#contact-us": {
+    "children": [
+      "rich-text#success-submit"
+    ]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "Thanks for reaching out! We will come back shortly.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/telefono"
+    }
+  },
+  "form-input.text#name": {
+    "props": {
+      "pointer": "#/properties/nombre"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/correo"
+    }
+  },
+
+  "form-submit#contact": {
+    "props": {
+      "label": "Submit"
+    }
+  }
+}

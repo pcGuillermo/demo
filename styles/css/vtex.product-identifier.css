@@ -1,0 +1,30 @@
+.product-identifier--productReference {
+  margin-bottom: 1rem;
+}
+.product-identifier__separator,
+.product-identifier__label{
+  display: none;
+}
+
+.product-identifier__value{
+  padding: 0;
+  padding-left: 2.5em;
+  font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #000;
+position: relative;
+margin-bottom: 1.5em;
+margin-top: -0.1em;
+}
+
+
+.product-identifier__value::before{
+  font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #000;
+position: absolute;
+content: 'SKU:';
+left: 0;
+}

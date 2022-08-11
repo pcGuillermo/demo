@@ -1,0 +1,89 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#category-spareparts",
+      "menu-item#category-interiors",
+      "menu-item#category-foreign",
+      "menu-item#category-tools",
+      "menu-item#category-accessories"
+    ]
+  },
+  "menu-item#category-spareparts": {
+    "props": {
+      "id": "menu-item-category-spareparts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/spareparts/",
+        "noFollow": false,
+        "tagTitle": "Refacciones",
+        "text": "Refacciones"
+      }
+    }
+  },
+  "menu-item#category-interiors": {
+    "props": {
+      "id": "menu-item-category-interiors",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/interiors/",
+        "noFollow": false,
+        "tagTitle": "Interiores",
+        "text": "Interiores"
+      }
+    }
+  },
+  "menu-item#category-foreign": {
+    "props": {
+      "id": "menu-item-category-foreign",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/foreign/",
+        "noFollow": false,
+        "tagTitle": "Exteriores",
+        "text": "Exteriores"
+      }
+    }
+  },
+  "menu-item#category-tools": {
+    "props": {
+      "id": "menu-item-category-tools",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tools/",
+        "noFollow": false,
+        "tagTitle": "Tools",
+        "text": "Tools"
+      }
+    }
+  },
+  "menu-item#category-accessories": {
+    "props": {
+      "id": "menu-item#category-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accessories/",
+        "noFollow": false,
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
+      }
+    }
+  }
+}

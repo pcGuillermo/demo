@@ -1,0 +1,16 @@
+.openIconContainer :global(.vtex-button) {
+    position: relative;
+}
+
+.openIconContainer :global(.vtex-button):hover {
+    background: none;
+}
+
+.openIconContainer :global(.vtex-button)::before {
+    position: absolute;
+    content: url('assets/cart.png');
+    width: 21px;
+    height: 21px;
+    right: 0;
+    bottom: 10px;
+}

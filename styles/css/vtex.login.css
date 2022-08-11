@@ -1,0 +1,16 @@
+.container :global(.vtex-button) {
+    position: relative;
+}
+
+.container :global(.vtex-button):hover {
+    background: none;
+}
+
+
+.container :global(.vtex-button)::before {
+    position: absolute;
+    content: url('assets/user.png');
+    width: 21px;
+    height: 21px;
+    bottom: 10px;
+}

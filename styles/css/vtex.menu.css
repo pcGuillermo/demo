@@ -1,0 +1,39 @@
+.styledLinkContent {
+    color: #fff;
+}
+
+.styledLinkContent:hover {
+    color: #418689;
+}
+.menuContainerNav--brand{
+    margin-left: 3em;
+}
+@media (max-width: 1347px) {
+    .menuContainerNav--brand{
+        margin-left: 2em;
+    }
+}
+@media (max-width: 1180px) {
+    .menuContainerNav--brand{
+        margin-left: 1em;
+    }
+}
+@media (max-width: 1124px) {
+    .menuContainerNav--brand{
+        margin-left: 0.5em;
+    }
+}
+.menuItem--isOpen,
+.menuItem--isClosed{
+    padding: 0 1.3em;
+}
+/* .menuContainerNav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+.menuContainer--brands{
+      display: flex;
+  align-items: center;
+  justify-content: center;
+}

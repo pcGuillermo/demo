@@ -1,0 +1,63 @@
+// https://puntocommerce.vtexcommercestable.com.br/api/dataentities/memoform/schemas/memoform
+// put
+{
+    "title": "memoform",
+    "type": "object",
+    "properties": {
+        "nombre": {
+            "type": "string",
+            "title": "Nombre",
+            "description": "Nombre"
+        },
+        "correo": {
+            "type": "string",
+            "title": "Correo Electrónico",
+            "description": "Correo electronico"
+        },
+        "telefono": {
+            "type": "string",
+            "title": "Teléfono",
+            "description": "Teléfono"
+        }
+    },
+    "required": [
+        "nombre",
+        "correo",
+        "telefono"
+    ],
+    "v-indexed":[
+        "nombre",
+        "correo",
+        "telefono"
+    ],
+    "v-security": {
+        "publicJsonSchema": true,
+        "allowGetAll": false,
+        "publicRead": [
+            "fieldExample"
+        ],
+        "publicWrite": [
+            "nombre",
+            "correo",
+            "telefono"
+        ],
+        "publicFilter": [
+            "fieldExample"
+        ]
+    },
+    "v-triggers":[
+        {
+            "name":"info-memoform",
+            "active": true,
+            "action":{
+                "type": "t-email",
+                "template": "info-memoform",
+                "body":{
+                    "nombre": "{!nombre}",
+                    "correo": "{!correo}",
+                    "telefono": "{!telefono}"
+                }
+            }
+        }
+    ]
+}

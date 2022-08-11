@@ -1,0 +1,90 @@
+{
+  "vtex.menu@2.x:menu#data": {
+    "children": [
+      "rich-text##phoneNumber",
+      "overlay-trigger##money",
+      "overlay-trigger##idiom"
+    ]
+  },
+  "rich-text##phoneNumber": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "text": "Llama sin costo: **33445050594**",
+      "blockClass": "phoneNumber"
+    }
+  },
+  "vtex.menu@2.x:menu#location": {
+    "children": [
+      "rich-text##location"
+    ]
+  },
+  "rich-text##location": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "text": "Ubicar Sucursales",
+      "blockClass": "location"
+    }
+  },
+  "overlay-trigger##money": {
+    "children": [
+      "rich-text##money",
+      "overlay-layout##money"
+    ]
+  },
+  "rich-text##money": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "text": "USD $",
+      "blockClass": "money"
+    }
+  },
+  "overlay-layout##money": {
+    "props": {
+      "placement": "bottom"
+    },
+    "children": [
+      "rich-text#l##money1"
+    ]
+  },
+  "rich-text#l##money1": {
+    "props": {
+      "text": "memoo",
+      "blockClass": ""
+    }
+  },
+  "overlay-trigger##idiom": {
+    "children": [
+      "rich-text##idiom",
+      "overlay-layout##idiom"
+    ]
+  },
+  "rich-text##idiom": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "text": "Mexico",
+      "blockClass": "idiom"
+    }
+  },
+  "overlay-layout##idiom": {
+    "props": {
+      "placement": "bottom"
+    },
+    "children": [
+      "rich-text#l##idiom1"
+    ]
+  },
+  "rich-text#l##idiom1": {
+    "props": {
+      "text": "memoo",
+      "blockClass": ""
+    }
+  }
+}

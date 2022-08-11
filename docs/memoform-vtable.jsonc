@@ -1,0 +1,51 @@
+// https://puntocommerce.vtexcommercestable.com.br/api/dataentities/vtable/documents/memoform?_schema=app
+// put
+{
+    "name": "memoform",
+    "title": "Formulario de contacto",
+    "tables": [
+        {
+            "id": "memoform",
+            "title": "Formulario de contacto",
+            "entity": "memoform",
+            "model": "memoform",
+            "fields": {
+                "id": {
+                    "width": 200,
+                    "label": "Id"
+                },
+                "nombre": {
+                    "width": 200,
+                    "label": "Número de Pedido"
+                },
+                "correo": {
+                    "width": 200,
+                    "label": "Correo Electrónico"
+                },
+                "telefono": {
+                    "width": 200,
+                    "label": "Telefono"
+                }
+            },
+            "list": [
+                "nombre",
+                "correo",
+                "telefono"
+            ],
+            "editor": {
+                "settings": {
+                    "sections": [
+                        {
+                            "name": "Formulario memo",
+                            "fields": [
+                            "nombre",
+                            "correo",
+                            "telefono"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

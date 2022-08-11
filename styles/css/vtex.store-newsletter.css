@@ -1,0 +1,26 @@
+.newsletterForm--newsletter-submit {
+    display: flex;
+    justify-content: flex-end;
+    /* background: #418689; */
+}
+
+.newsletterForm--newsletter-submit :global(.vtex-button) {
+    background: #418689;
+}
+
+.newsletterForm--newsletter-submit :global(.vtex-button__label) {
+    font-size: 12px;
+    /* background: #418689; */
+}
+
+.newsletterForm--newsletter-email {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1em;
+
+}
+
+/* .newsletterForm--newsletter-email :global(.vtex-styleguide-9-x-input) {
+    min-width: 350px;
+} */
